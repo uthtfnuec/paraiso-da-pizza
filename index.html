@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Paraíso da Pizza | Paraíso do Tocantins</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    }
+    body {
+      background-color: #121212;
+      color: #f5f5f5;
+      line-height: 1.6;
+    }
+    header {
+      background: #1b1b1b;
+      padding: 16px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      border-bottom: 1px solid #2c2c2c;
+    }
+    .logo {
+      font-size: 1.25rem;
+      font-weight: 800;
+      color: #ff9800;
+      letter-spacing: 0.5px;
+    }
+    .btn-top {
+      background: #25d366;
+      color: #fff;
+      text-decoration: none;
+      padding: 8px 14px;
+      border-radius: 20px;
+      font-weight: 700;
+      font-size: 0.85rem;
+    }
+    .hero {
+      background: linear-gradient(rgba(0, 0, 0, 0.72), rgba(18, 18, 18, 0.95)),
+        url("https://unsplash.com")
+        center/cover no-repeat;
+      padding: 64px 20px;
+      text-align: center;
+    }
+    .rating-badge {
+      display: inline-block;
+      background: rgba(255, 152, 0, 0.18);
+      border: 1px solid #ff9800;
+      color: #ffb74d;
+      padding: 6px 14px;
+      border-radius: 20px;
+      font-size: 0.85rem;
+      font-weight: 700;
+      margin-bottom: 16px;
+    }
+    .hero h1 {
+      font-size: 2.1rem;
+      line-height: 1.2;
+      margin-bottom: 14px;
+      color: #ffffff;
+    }
+    .hero p {
+      color: #d0d0d0;
+      max-width: 520px;
+      margin: 0 auto 26px;
+      font-size: 1rem;
+    }
+    .btn-cta {
+      display: inline-block;
+      background: #e53935;
+      color: #fff;
+      text-decoration: none;
+      padding: 15px 28px;
+      border-radius: 30px;
+      font-weight: 800;
+      font-size: 1rem;
+      box-shadow: 0 6px 20px rgba(229, 57, 53, 0.4);
+    }
+    section {
+      padding: 42px 20px;
+      max-width: 820px;
+      margin: 0 auto;
+    }
+    h2 {
+      font-size: 1.5rem;
+      color: #ff9800;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 16px;
+    }
+    @media (min-width: 640px) {
+      .grid {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+    .card {
+      background: #1e1e1e;
+      border: 1px solid #2c2c2c;
+      border-radius: 14px;
+      padding: 18px;
+    }
+    .card h3 {
+      color: #ffffff;
+      font-size: 1.1rem;
+      margin-bottom: 6px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .tag {
+      background: #e53935;
+      color: #fff;
+      font-size: 0.7rem;
+      padding: 3px 8px;
+      border-radius: 8px;
+      text-transform: uppercase;
+    }
+    .card p {
+      color: #bdbdbd;
+      font-size: 0.92rem;
+    }
+    .info-box {
+      background: #1b1b1b;
+      border-left: 4px solid #ff9800;
+      padding: 20px;
+      border-radius: 10px;
+      margin-top: 10px;
+    }
+    .info-box p {
+      margin-bottom: 10px;
+      color: #e0e0e0;
+      font-size: 0.95rem;
+    }
+    .btn-map {
+      display: inline-block;
+      margin-top: 8px;
+      color: #ff9800;
+      font-weight: 700;
+      text-decoration: none;
+    }
+    footer {
+      text-align: center;
+      padding: 28px 20px;
+      background: #0d0d0d;
+      color: #777;
+      font-size: 0.85rem;
+      border-top: 1px solid #222;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">🍕 Paraíso da Pizza</div>
+    <a class="btn-top" href="https://wa.me." target="_blank">Pedir no Zap</a>
+  </header>
+
+  <div class="hero">
+    <div class="rating-badge">⭐ 4,4 no Google • +765 avaliações</div>
+    <h1>A pizza favorita de Paraíso do Tocantins</h1>
+    <p>Massa caprichada, recheio farto e atendimento no salão ou delivery direto no seu WhatsApp.</p>
+    <a class="btn-cta" href="https://wa.me." target="_blank">Fazer Pedido pelo WhatsApp</a>
+  </div>
+
+  <section>
+    <h2>Destaques do Cardápio</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>Tocantinense <span class="tag">Mais Pedida</span></h3>
+        <p>Mussarela, molho especial, carne de sol desfiada, banana e orégano.</p>
+      </div>
+      <div class="card">
+        <h3>Toscana</h3>
+        <p>Mussarela, lombo, bacon crocante, calabresa, tomate, catupiry e orégano.</p>
+      </div>
+      <div class="card">
+        <h3>Filé ao Alho</h3>
+        <p>Molho da casa, tiras de filé de carne, mussarela derretida, alho dourado e orégano.</p>
+      </div>
+      <div class="card">
+        <h3>4 Queijos</h3>
+        <p>Combinação cremosa de mussarela, parmesão, ricota, catupiry e orégano.</p>
+      </div>
+      <div class="card">
+        <h3>Vegetariana</h3>
+        <p>Mussarela, pimentão, cebola, tomate fresco, milho e orégano.</p>
+      </div>
+      <div class="card">
+        <h3>Romeu e Julieta <span class="tag">Doce</span></h3>
+        <p>Mussarela derretida com goiabada cremosa na medida certa.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Onde Estamos e Horários</h2>
+    <div class="info-box">
+      <p><strong>📍 Endereço:</strong> Av. Bernardo Sayão, 359 - Bela Vista, Paraíso do Tocantins - TO</p>
+      <p><strong>🕒 Funcionamento:</strong> Segunda, Terça e Quinta a Domingo, das 17h00 às 00h00</p>
+      <p><strong>📱 WhatsApp:</strong> (63) 99211-8824</p>
+      <p><strong>💳 Pagamento:</strong> Cartão de crédito, débito, Pix e pagamento por aproximação</p>
+      <a class="btn-map" href="https://google.com" target="_blank">Ver localização no Google Maps →</a>
+    </div>
+  </section>
+
+  <footer>
+    <p>Paraíso da Pizza • Paraíso do Tocantins - TO</p>
+    <p style="margin-top:6px;">Site modelo demonstrativo</p>
+  </footer>
+
+</body>
+</html>
