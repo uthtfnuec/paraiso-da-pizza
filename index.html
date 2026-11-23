@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#121212">
+  <title>Paraíso da Pizza | Paraíso do Tocantins</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="logo" href="#inicio">🍕 Paraíso da Pizza</a>
+    <a class="btn-whatsapp" href="https://wa.me/5563992118824" target="_blank" rel="noopener">Pedir no Zap</a>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <span class="eyebrow">🍕 Sabor que reúne</span>
+      <h1>Seu próximo pedido está aqui!</h1>
+      <p>Escolha suas pizzas, bebidas e adicionais. Monte seu pedido e envie diretamente pelo WhatsApp.</p>
+      <a class="btn-primary" href="#cardapio">Ver cardápio</a>
+    </section>
+
+    <section class="highlights">
+      <h2>Destaques do Cardápio</h2>
+      <div class="highlight-grid">
+        <article class="highlight-card">
+          <div class="card-heading"><h3>Tocantinense</h3><span class="tag">Mais pedida</span></div>
+          <p>Molho de tomate, mussarela, carne de sol, alho poró, bacon e creme cheese.</p>
+        </article>
+        <article class="highlight-card">
+          <div class="card-heading"><h3>Frango Catupiry</h3><span class="tag">Clássica</span></div>
+          <p>Frango, creme de leite, milho, mussarela e catupiry original.</p>
+        </article>
+        <article class="highlight-card">
+          <div class="card-heading"><h3>Romeu e Julieta</h3><span class="tag">Doce</span></div>
+          <p>Creme de leite, mussarela e goiabada.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="cardapio" class="menu-section">
+      <h2>Nosso Cardápio</h2>
+      <p class="section-intro">Escolha o tamanho e adicione cada item ao seu pedido.</p>
+      <div id="categoryNav" class="category-nav" aria-label="Categorias do cardápio"></div>
+      <div id="menuList"></div>
+    </section>
+
+    <section id="pedido" class="order-section">
+      <h2>Seu Pedido</h2>
+      <div class="cart-panel">
+        <div id="cartItems" class="cart-items">
+          <p class="empty-cart">Seu carrinho está vazio. Escolha algo gostoso no cardápio! 🍕</p>
+        </div>
+        <div class="cart-total-row"><span>Total</span><strong id="cartTotal">R$ 0,00</strong></div>
+
+        <form id="orderForm">
+          <h3>Dados para finalizar</h3>
+          <div class="form-grid">
+            <label>Seu nome
+              <input id="customerName" type="text" placeholder="Nome completo" required>
+            </label>
+            <label>Telefone para contato
+              <input id="customerPhone" type="tel" placeholder="(63) 99999-9999">
+            </label>
+            <label>Tipo de pedido
+              <select id="orderType">
+                <option value="Entrega">Entrega</option>
+                <option value="Retirada no local">Retirada no local</option>
+              </select>
+            </label>
+            <label>Forma de pagamento
+              <select id="payment">
+                <option value="Pix">Pix</option>
+                <option value="Cartão de crédito">Cartão de crédito</option>
+                <option value="Cartão de débito">Cartão de débito</option>
+                <option value="Dinheiro">Dinheiro</option>
+                <option value="Aproximação">Pagamento por aproximação</option>
+              </select>
+            </label>
+            <label class="full-width" id="addressWrap">Endereço para entrega
+              <input id="customerAddress" type="text" placeholder="Rua, número, bairro e complemento">
+            </label>
+            <label class="full-width">Observações
+              <textarea id="notes" rows="3" placeholder="Ex.: tirar cebola, ponto de referência, troco..."></textarea>
+            </label>
+          </div>
+          <button class="btn-checkout" type="submit">Enviar pedido pelo WhatsApp</button>
+          <p class="form-note">O pedido será aberto no WhatsApp para você conferir e enviar à pizzaria.</p>
+        </form>
+      </div>
+    </section>
+
+    <section class="location-section" id="localizacao">
+      <h2>Onde Estamos e Horários</h2>
+      <div class="info-box">
+        <p><strong>📍 Endereço:</strong> Av. Bernardo Sayão, 359 - Bela Vista, Paraíso do Tocantins - TO</p>
+        <p><strong>🕒 Funcionamento:</strong> Segunda, terça e quinta a domingo, das 17h às 00h</p>
+        <p><strong>📱 WhatsApp:</strong> <a href="https://wa.me/5563992118824" target="_blank" rel="noopener">(63) 99211-8824</a></p>
+        <p><strong>💳 Pagamento:</strong> Cartão de crédito, débito, Pix e pagamento por aproximação</p>
+        <a class="map-link" href="https://www.google.com/maps/search/?api=1&query=Av.+Bernardo+Say%C3%A3o,+359,+Bela+Vista,+Para%C3%ADso+do+Tocantins+-+TO" target="_blank" rel="noopener">Ver localização no Google Maps →</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Paraíso da Pizza • Paraíso do Tocantins - TO</p>
+    <p class="footer-small">Cardápio e pedidos online</p>
+  </footer>
+
+  <a class="floating-cart" href="#pedido">🛒 Ver pedido <span id="cartCount">0</span></a>
+  <script src="script.js"></script>
+</body>
+</html>
